@@ -1,0 +1,175 @@
+{
+	"senderStartMessageDialog": {
+	
+		"title": "Welcome To Send It Direct!",
+		"content": "<b>Send It Direct</b> will start a Java Applet.<br />You have to accept the digital certification for success!",
+		"buttons":  {
+		
+			"Show More Information": "showInformations",
+			"Send It Direct": "loadApplet"
+		}
+	},
+	
+	"receiverStartMessageDialog": {
+	
+		"title": "Welcome To Send It Direct!",
+		"content": "<b>Send It Direct</b> will start a Java Applet.<br />You have to accept the digital certification for success!",
+		"buttons":  {
+		
+			"Show More Information": "showInformations",
+			"Receive File": "loadApplet"
+		}
+	},
+	
+	"noFileMessageDialog": {
+	
+		"title": "No file selected!",
+		"content": "<p>No file selected!</p><p>You have to select a file for transfer.</p>",
+		"buttons": { 
+				
+			"Select file": "selectFileFunction"
+		}
+	},
+	
+	"infoMessageDialog": {
+	
+		"title": "Information About Send It Direct!",
+		"content": "<p>SendItDirect is a free service for sending files direct form browser to browser. The files will not be stored on a server, they will be directly send to receiver without any logging of information.</p><p>Because of the needed direct connection to receiver, a signed JavaApplet will be started, which you have to accept. If you don't accept the digital certification, the application won't work.</p>",
+		"buttons": {
+			
+			"Go Back": "goBackToStartDialog"
+		}
+	},
+	
+	"transferStateDialog": {
+	
+		"title": "File Transfer State",
+		"content": "<div>File can be accessed by the following Link:</div><input type=\"text\" id=\"fileAccessUrl\" style=\"width: 100%;\" /><div id=\"transferInfo\">For file transfer, you have to send this link by another medium to the receiver.</div><div id=\"transferState\"></div>",
+		"buttons": { 
+			
+			"Copy URL To Clipboard": "copyToClipboard",
+			"Abort & New": "abortAndStartNew"
+		},
+		"action": "setAccessUrl"
+	},
+	
+	"startingAppletDialog": {
+	
+		"title": "Starting Application",
+		"content": "<div>Starting Application, please wait...</div><div id=\"progressbarWaiting\"></div>",
+		"action": "progressbarWaiting"
+ 	},
+ 	 	
+ 	"waitFileDownloadDialog": {
+ 	
+ 		"title": "Starting File Download",
+ 		"content": "<div>Your Download will start after a few seconds, if not, click the following link:</div><br /><div><a href=\"\" id=\"downloadLink\">Download file</a></div>"
+ 	},
+ 	
+ 	"startFileDownloadDialog": {
+ 	
+ 		"title": "File Download Started",
+ 		"content": "<div>File Download Started! Your browser does the rest.</div>"
+ 	},
+ 	
+ 	"waitForConnectionDialog": {
+ 		
+ 		"title": "Waiting for connection",
+ 		"content": "The service tries to connect to the opponent. This can take a few seconds, please have patience."
+ 	},
+ 	 	
+ 	"fileTransferFinishedDialog": {
+ 		
+ 		"title": "File transfer finished",
+ 		"content": "The file was successful transfered. Now you can open and use it."
+ 	},
+ 	
+ 	"waitFileProvidingDialog": {
+ 		
+ 		"title": "File providing...",
+ 		"content": "<div>Waiting for file providing</div><div id=\"progressbarWaiting\"></div>",
+		"action": "progressbarWaiting"
+ 	},
+ 	
+ 	"sendItDirectInitializationError": {
+ 		
+ 		"title": "Initialization error",
+ 		"content": "On service initialization an error occurred. Please check your security settings of your Browser, System and Java installation.",
+ 	 	"buttons": {}
+ 	},
+ 	
+ 	"socketIOExceptionError": {
+ 		
+ 		"title": "Connection error",
+ 		"content": "Failed to build the connection. With some very few configurations of the Internet connection (router, firewall, ...) it is generally possible that the connection can not be established. In these cases you can not use this service. To exclude a temporary problem, please try again later.",
+ 	 	"buttons": {}
+ 	},
+ 	
+	"targetNotRegisteredError": {
+ 		
+ 		"title": "Target not registered",
+ 		"content": "The desired target (file) is not or no longer registered on our system!<br />Please contact the sender or select another file.",
+ 		"buttons": {}
+ 	},
+ 	
+ 	"malformedURLExceptionError": {
+ 		
+ 		"title": "Filedownload not possible",
+ 		"content": "The file can not be made available in your Browser. Please check your security settings.",
+ 		"buttons": {}
+ 	},
+ 	 
+ 	"transferIOExceptionError": {
+ 		
+ 		"title": "Transfer error",
+ 		"content": "When transferring the file, an error has occurred. Maybe the connection was terminated by the opposite side or the connection was interrupted. Please try again later or contact the sender.",
+ 		"buttons": {}
+ 	},
+ 	
+ 	"readFileInformationError": {
+ 		
+ 		"title": "Transfer error",
+ 		"content": "When transferring the file information, an error has occurred. Maybe the connection was terminated by the opposite side or the connection was interrupted. Please try again later or contact the sender.",
+ 		"buttons": {}
+ 	},
+ 	
+ 	"fileNotFoundExceptionError": {
+ 		
+ 		"title": "Datei Zugriffsfehler",
+ 		"content": "Auf die von Ihnen angegebene Datei konnte nicht zugegriffen werden. Bitte überprüfen Sie die Zugriffsrechte auf die Datei und schauen Sie nach, ob die Datei noch vorhanden ist.",
+ 		"buttons": {}
+ 	},
+ 	 	
+ 	"acceptIOExceptionError": {
+ 		
+ 		"title": "Verbindungsaufbaufehler",
+ 		"content": "Beim Aufbauen einer Verbindung zur Gegenseite ist ein Fehler aufgetreten. Bei einigen sehr wenigen Konfigurationen des Internetzugangs (Router, Firewall, ...) kann es möglich sein, das generell keine Verbindung aufgebaut werden kann. In diesen Fällen können Sie diesen Dienst leider nicht nutzen. Um aber ein temporäres Problem auszuschließen, versuchen Sie es bitte später noch einmal.",
+ 		"buttons": {}
+  	},
+  	  	
+  	"targetAlreadyRegisteredError": {
+  		
+  		"title": "Ressourcenkonflikt",
+  		"content": "Bei der Registrierung Ihrer Datei ist ein Ressourcenkonflikt aufgetreten. Bitte versuchen Sie es später noch einmal.",
+  		"buttons": {}
+  	},
+ 	
+  	"couldNotRegisterTargetError": {
+  		
+  		"title": "Registrierungsfehler",
+  		"content": "Ihre Datei konnte nicht in unserem System registriert werden. Eventuell ist es gerade nicht erreichbar oder überlastet. Bitte versuchen Sie es später noch einmal.",
+  		"buttons": {}
+  	},
+  	
+  	"changeLanguageText": "Change language:",
+  	
+ 	"transferCompleteText": "Transfer complete!",
+ 	
+ 	"waitForTransferText": "Waiting for transfer...",
+ 	
+ 	"speedText": "Speed",
+ 	
+ 	"remainingText": "Remaining",
+ 	
+	"preventUnloadText": "ATTENTION: If you leave this page, the file you provide will be not longer available for other users!"
+}

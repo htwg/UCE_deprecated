@@ -1,0 +1,48 @@
+<!--
+
+    Copyright (C) 2011 Stefan Lohr
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<?php
+
+/**
+ * Load the language config file with the default variables 
+ */
+require_once('lang.cfg.inc.php');
+
+/**
+ * Load the language detection function for detecting the prefered browser language.
+ */
+require_once('lang.http.inc.php');
+
+/**
+ * Get the prefered language of the requesting browser
+ */
+$language = getLangFromBrowser($allowedLanguages, $defaultLanguage);
+
+/**
+ * Load the template of the html page content
+ */
+$template = file_get_contents('index.tpl.html');
+
+/**
+ * Parse the html page content and send it to browser.
+ * On parsing, only the language identification code will be set.
+ */
+printf($template, $language);
+
+?>

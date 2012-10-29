@@ -1,0 +1,58 @@
+/**
+ * Copyright (C) 2011 Stefan Lohr
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Set the site background blue and overwrite it with an image
+ */
+.sitebackground {
+	
+	background: url("background.jpg");
+	background-color: #6396d5;
+    opacity: 0.8;
+}
+
+/**
+ * Position of the language selection must be set on the top right of the browser window 
+ */
+.languageFlag {
+	
+	position: absolute;
+	text-align: right;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+}
+
+/**
+ * To set text in the center of the progressbar, it must be set as relative position
+ */
+.ui-progressbar {
+	
+	position: relative;
+}
+
+/**
+ * Class with the properties of the text which should be placed inside a progressbar
+ */
+.pbpos {
+	
+	position: absolute;
+	left: -8px;
+	top: 8px;
+	text-align: right;
+	width: 100%;
+}

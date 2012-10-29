@@ -1,0 +1,175 @@
+{
+	"senderStartMessageDialog": {
+	
+		"title": "Willkommen bei Send It Direct!",
+		"content": "Für <b>Send It Direct</b> muss ein Java Applet gestartet werden. Damit das funktioniert, müssen Sie das digitale Zertifikat akzeptieren.",
+		"buttons": {
+		
+			"Mehr Informationen": "showInformations",
+			"Sende Datei": "loadApplet"
+		}
+	},
+	
+	"receiverStartMessageDialog": {
+	
+		"title": "Willkommen bei Send It Direct!",
+		"content": "Für <b>Send It Direct</b> muss ein Java Applet gestartet werden. Damit das funktioniert, müssen Sie das digitale Zertifikat akzeptieren.",
+		"buttons": {
+		
+			"Mehr Informationen": "showInformations",
+			"Empfange Datei": "loadApplet"
+		}
+	},
+	
+	"noFileMessageDialog": {
+	
+		"title": "Keine Datei ausgewählt!",
+		"content": "<p>Keine Datei ausgewählt!</p><p>Sie müssen eine Datei zum Versenden auswählen.</p>",
+		"buttons": { 
+				
+			"Datei auswählen": "selectFileFunction"
+		}
+	},
+	  	
+  	"changeLanguageText": "Sprache ändern:",
+  	
+	"infoMessageDialog": {
+	
+		"title": "Informationen über Send It Direct!",
+		"content": "<p>Send It Direct ist ein kostenloser Service um Dateien von Browser zu Browser zu versenden. Die Dateien werden auf keinem Server gespeichert, sie werden direkt zum Empfänger versendet, ohne, dass irgendwelche Daten gespeichert werden.</p><p>Da eine direkte Verbindung zum Empfänger aufgebaut werden muss, wird ein signiertes JavaApplet gestartet, dessen Zertifikat akzeptiert werden muss. Wenn das Zertifikat nicht akzeptiert wird, kann unsere Service-Anwendung nicht gestartet werden.</p>",
+		"buttons": {
+			
+			"Gehe zurück": "goBackToStartDialog"
+		}
+	},
+	
+	"transferStateDialog": {
+	
+		"title": "Übertragungsstatus",
+		"content": "<div>Zugriff auf die Datei unter folgendem Link:</div><input type=\"text\" id=\"fileAccessUrl\" style=\"width: 100%;\" /><div id=\"transferInfo\">Um die Datei zu versenden, müssen Sie diese Adresse über ein anderes Medium an den Empfänger senden.</div><div id=\"transferState\"></div>",
+		"buttons": { 
+				
+			"Kopiere den Link": "copyToClipboard",
+			"Abbrechen & Neu": "abortAndStartNew"
+		},
+		"action": "setAccessUrl"
+	},
+	
+	"startingAppletDialog": {
+	
+		"title": "Starte die Anwendung",
+		"content": "<div>Starte Anwendung, bitte warten Sie...</div><div id=\"progressbarWaiting\"></div>",
+		"action": "progressbarWaiting"
+ 	},
+ 	 	
+ 	"waitFileDownloadDialog": {
+ 	
+ 		"title": "Starte das Herunterladen",
+ 		"content": "<div>Ihr Download wird in den nächsten 3 Sekunden starten, wenn nicht, klicken Sie den folgenden Link:</div><br /><div><a href=\"\" id=\"downloadLink\">Datei herunterladen</a></div>"
+ 	},
+ 	
+ 	"startFileDownloadDialog": {
+ 	
+ 		"title": "Herunterladen gestartet",
+ 		"content": "<div>Das Herunterladen der Datei hat angefangen! Ihr Browser erledigt den Rest.</div>"
+ 	},
+ 	
+ 	"waitForConnectionDialog": {
+ 		
+ 		"title": "Warte auf Verbindung",
+ 		"content": "Der Service versucht eine Verbindung zur Gegenseite aufzubauen. Das kann ein paar sekunden dauern, bitte haben Sie Geduld."
+ 	},
+ 	
+ 	"fileTransferFinishedDialog": {
+ 		
+ 		"title": "Dateiübertragung beendet",
+ 		"content": "Die Datei wurde erfolgreich übertragen und steht Ihnen jetzt komplett zur Verfügung."
+ 	},
+ 	 	
+ 	"waitFileProvidingDialog": {
+ 		
+ 		"title": "File providing...",
+ 		"content": "<div>Waiting for file providing</div><div id=\"progressbarWaiting\"></div>",
+		"action": "progressbarWaiting"
+ 	},
+ 	
+ 	"sendItDirectInitializationError": {
+ 		
+ 		"title": "Initialisierungsfehler",
+ 		"content": "Bei der Initialisierung des Services ist ein Fehler aufgetreten. Prüfen Sie bitte Ihre Sicherheits-, Browser- und Java-Einstellungen.",
+ 	 	"buttons": {}
+ 	},
+ 	
+ 	"socketIOExceptionError": {
+ 		
+ 		"title": "Verbindungsfehler",
+ 		"content": "Fehler beim Aufbauen der Verbindung. Bei einigen sehr wenigen Konfigurationen des Internetzugangs (Router, Firewall, ...) kann es möglich sein, das generell keine Verbindung aufgebaut werden kann. In diesen Fällen können Sie diesen Dienst leider nicht nutzen. Um aber ein temporäres Problem auszuschließen, versuchen Sie es bitte später noch einmal.",
+ 	 	"buttons": {}
+ 	},
+ 	
+	"targetNotRegisteredError": {
+ 	
+ 		"title": "Ziel nicht registriert",
+ 		"content": "Die gewünschte Ziel(datei) ist nicht oder nicht mehr in unserem System registriert!<br />Setzen Sie sich mit dem Sender in Verbindung oder wählen Sie eine andere Datei aus.",
+ 		"buttons": {}
+ 	},
+ 	
+ 	"malformedURLExceptionError": {
+ 		
+ 		"title": "Dateidownload nicht möglich",
+ 		"content": "Die Datei kann in Ihrem Browser leider nicht zur Verfügung gestellt werden. Prüfen Sie bitte Ihre Sicherheitseinstellungen.",
+ 		"buttons": {}
+ 	},
+ 	 
+ 	"transferIOExceptionError": {
+ 		
+ 		"title": "Übertragungsfehler",
+ 		"content": "Bei der Übertragung der Datei ist ein Fehler aufgetreten. Eventuell wurde die Verbindung auf der Gegenseite beendet oder die Verbindung wurde unterbrochen. Bitte versuchen Sie es später noch einmal.",
+ 		"buttons": {}
+ 	},
+ 	
+ 	"readFileInformationError": {
+ 		
+ 		"title": "Übertragungsfehler",
+ 		"content": "Bei der Übertragung der Datei-Informationen ist ein Fehler aufgetreten. Eventuell wurde die Verbindung auf der Gegenseite beendet oder die Verbindung wurde unterbrochen. Bitte versuchen Sie es später noch einmal.",
+ 		"buttons": {}
+ 	},
+ 	
+ 	"fileNotFoundExceptionError": {
+ 		
+ 		"title": "Dateizugriffsfehler",
+ 		"content": "Auf die von Ihnen angegebene Datei konnte nicht zugegriffen werden. Bitte überprüfen Sie die Zugriffsrechte auf die Datei und schauen Sie nach, ob die Datei noch vorhanden ist.",
+ 		"buttons": {}
+ 	},
+ 	
+ 	"acceptIOExceptionError": {
+ 		
+ 		"title": "Verbindungsaufbaufehler",
+ 		"content": "Beim Aufbauen einer Verbindung zur Gegenseite ist ein Fehler aufgetreten. Bei einigen sehr wenigen Konfigurationen des Internetzugangs (Router, Firewall, ...) kann es möglich sein, das generell keine Verbindung aufgebaut werden kann. In diesen Fällen können Sie diesen Dienst leider nicht nutzen. Um aber ein temporäres Problem auszuschließen, versuchen Sie es bitte später noch einmal.",
+ 		"buttons": {}
+  	},
+  	
+  	"targetAlreadyRegisteredError": {
+  		
+  		"title": "Ressourcenkonflikt",
+  		"content": "Bei der Registrierung Ihrer Datei ist ein Ressourcenkonflikt aufgetreten. Bitte versuchen Sie es später noch einmal.",
+  		"buttons": {}
+  	},
+ 	
+  	"couldNotRegisterTargetError": {
+  		
+  		"title": "Registrierungsfehler",
+  		"content": "Ihre Datei konnte nicht in unserem System registriert werden. Eventuell ist es gerade nicht erreichbar oder überlastet. Bitte versuchen Sie es später noch einmal.",
+  		"buttons": {}
+  	},
+ 	
+ 	"transferCompleteText": "Übertragung abgeschlossen!",
+ 	
+ 	"waitForTransferText": "Warte auf Dateiannahme...",
+ 	
+ 	"speedText": "Geschw.",
+ 	
+ 	"remainingText": "Dauer",
+ 	
+	"preventUnloadText": "VORSICHT: Beim Verlassen dieser Seite wird die von Ihnen bereit gestellte Datei anderen Benutzern nicht mehr zum Download zur Verfügung stehen!"
+}
