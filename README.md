@@ -1,4 +1,4 @@
-	Copyright (c) 2012 Thomas Zink, Daniel Maier, Stefan Lohr
+	Copyright (c) 2012 Thomas Zink, Daniel Maier, Oliver Haase, Stefan Lohr
 
 	This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -26,5 +26,7 @@ The framework is currently refactored and under heavy development. The
 refactored version will gradually be published in the
 [UCE repository](https://github.com/htwg/UCE).
 
-For more information about UCE see the [project page](http://ice.in.htwg-konstanz.de/).
+For more information about UCE see the [project page](http://ice.in.htwg-konstanz.de/). On the [project download page](http://ice.in.htwg-konstanz.de/downloads.html) you can also find the published jar archives. 
+
 Do not hesitate to contact us if you are interested in helping in the project.
+
